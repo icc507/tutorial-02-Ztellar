@@ -14,10 +14,10 @@ def arbolTrinario(numero):
 
 
 def insertaEnArbolTrinario(arbol, numero):
-    if numero == arbol[0]:
-        insertaEnArbolTrinario(arbol[2], numero)
-    elif arbol == []:
+    if arbol == []:
         arbol += arbolTrinario(numero)
+    elif numero == arbol[0]:
+        insertaEnArbolTrinario(arbol[2], numero)
     elif numero <= arbol[0]:
         insertaEnArbolTrinario(arbol[1], numero)
     else:
