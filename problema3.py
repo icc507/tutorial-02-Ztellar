@@ -19,7 +19,7 @@ def insertaEnArbolTrinario(arbol, numero):
     elif numero <= arbol[0]:
         insertaEnArbolTrinario(arbol[1], numero)
     elif numero == arbol[0]:
-        insertaEnArbolTrinario(arbol(2), numero)
+        insertaEnArbolTrinario(arbol[2], numero)
     else:
         insertaEnArbolTrinario(arbol[3], numero)
 
